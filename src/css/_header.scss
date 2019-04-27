@@ -1,0 +1,43 @@
+.header{
+    background: #FFF;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .container {
+        display: flex;
+        justify-content: space-between;    
+        .logo{
+            @include reset();
+            color: $main-color;
+        }
+        .nav{
+            .list{
+                @include reset();
+                display: flex;
+                list-style-type: none;
+                padding-top: 10px;
+                .list-item{
+                    margin-right: 20px;            
+                    .list-item-link{
+                        border-right: 1px #DFDFDF solid;
+                        color:$links;
+                        padding: 10px 20px;
+                        transition: background 1s;
+                    }
+                    .list-item-link:hover{
+                        background: #DFDFDF;
+                    }
+                }
+                .list-item:last-child {
+                    .list-item-link {
+                        border-right: none;
+                    }
+                }
+    
+            }
+        }
+    
+    }
+    
+}
